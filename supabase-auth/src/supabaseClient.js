@@ -3,6 +3,8 @@ import { createClient } from "@supabase/supabase-js";
 const supabaseURL = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
+console.log(supabaseURL);
+console.log(supabaseAnonKey);
 if (!supabaseURL || !supabaseAnonKey) {
   throw new Error("Supabase URL and anon key must be provided.");
 }
